@@ -60,6 +60,10 @@ section {
     font-size: 2em;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section.normal {
     background-color: white;
     color: black;
@@ -73,6 +77,15 @@ section.imagem {
 section.imagem > p {
     width: 400px;
     background-color: rgb(26, 25, 25);
+}
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
 }
 
 footer {
