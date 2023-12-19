@@ -9,8 +9,8 @@
 body {
     background-image: url(https://img.freepik.com/fotos-premium/um-escritorio-minimalista-com-uma-mesa-elegante-e-moderna-perfeita-para-jogos_124507-143546.jpg?w=740);
     background-size: cover;
-
-    max-width: 2000px;
+    background-color: black;
+    
 }
 
 
@@ -40,6 +40,10 @@ header > nav > a:hover {
     color: darkblue;
 }
 
+header > nav > a.estado {
+    color: darkblue;
+}
+
     main {
         background-color: rgba(0, 0, 0, 0.767);
         max-width: 1250px;
@@ -56,6 +60,12 @@ header > nav > a:hover {
 
     }
 
+    main > p {
+        color: white;
+        margin-left: 100px;
+        font-size: 20px;
+    }
+
     main > h1 {
         color: white;
         margin-top: 200px;
@@ -64,13 +74,15 @@ header > nav > a:hover {
 
     }
 
-    main > p {
-        color: white;
-        margin: 10px;
-        margin-left: 100px;
-        margin-top: 50px;
-        font-size: 20px;
+    @media (max-width: 400px){
+        main > h1 {
+            color: white;
+            margin-top: 200px;
+            margin-left: 20px;
+            font-size: 50px;
+        }
     }
+    
 
     footer {
         background-color: rgba(0, 0, 0, 0.068);
