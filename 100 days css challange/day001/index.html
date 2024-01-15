@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Courier New', 'Courier', sans-serif;
+      }
+
+      .box {
+        background: linear-gradient(to top right, #43389f 0%, #4ec6ca 100%);
+        color: white;
+        padding: 10px;
+        margin: 50px 30%;
+        width: 500px;
+        height: 500px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.219);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+        justify-content: center;
+        font-family: 'Courier New', 'Courier', sans-serif;
+      }
+
+      .box-number {
+        display: flex;
+      }
+
+      .number {
+        background-color: white;
+      }
+
+      .primeiro {
+        position: relative;
+        width: 30px;
+        height: 120px;
+        border-radius: 4px;
+        box-shadow: 3px 3px 10px 10px rgba(0, 0, 0, 0.123);
+        z-index: 1;
+      }
+
+      .ponta {
+        background-color: white;
+        width: 30px;
+        height: 60px;
+        border-radius: 4px;
+        transform: rotate(41deg);
+        translate: -20px 1px;
+        position: absolute;
+        z-index: 0;
+        box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.123);
+      }
+
+      .segundo {
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+        box-shadow: 3px 3px 10px 10px rgba(0, 0, 0, 0.123);
+        margin-left: -10px;
+      }
+
+      .terceiro {
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+        box-shadow: 3px 3px 10px 10px rgba(0, 0, 0, 0.123);
+        margin-left: -10px;
+      }
+
+      .inter {
+        background: linear-gradient(to top right, #43389f, #4ec6ca);
+        width: 55%;
+        height: 55%;
+        border-radius: 100%;
+        margin: auto;
+        margin-top: 22%;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 100px;
+      }
+
+      h3 {
+        font-weight: 700px;
+        font-size: 25px;
+        margin-top: -35px;
+        letter-spacing: .04em;
+        line-height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="box-number">
+        <div class="number primeiro"></div>
+        <div class="ponta"></div>
+        <div class="number segundo"><div class="inter"></div></div>
+        <div class="number terceiro"><div class="inter"></div></div>
+      </div>
+      <h1>DAYS</h1>
+      <h3>CSS CHALLENGE</h3>
+    </div>
+  </body>
+</html>
