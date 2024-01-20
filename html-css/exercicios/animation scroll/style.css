@@ -1,0 +1,43 @@
+section {
+  margin: 100px auto;
+  width: 500px;
+  height: auto;
+  overflow: hidden;
+}
+
+.logo {
+  display: flex;
+  gap: 20px;
+}
+
+.logo > div {
+  width: 200px;
+  height: 200px;
+  background-color: gray;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(15px);
+  transition: all 2s;
+  transform: translateX(-100%);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transition: all 2s;
+  transform: translateX(0);
+}
+
+.logo :nth-child(2) {
+  transition-delay: 700ms;
+}
+.logo :nth-child(3) {
+  transition-delay: 1s;
+}
+.logo :nth-child(4) {
+  transition-delay: 1.5s;
+}
